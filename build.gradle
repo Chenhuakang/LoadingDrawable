@@ -2,10 +2,24 @@
 
 buildscript {
     repositories {
-        jcenter()
+        maven {
+            credentials {
+                username '63c4477606cf4c2928d2cac1'
+                password 'ZhPGBcp7_InO'
+            }
+            url "https://packages.aliyun.com/maven/repository/2323209-release-43rnAu"
+        }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'}
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath 'com.android.tools.build:gradle:7.3.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -14,6 +28,20 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        maven {
+            credentials {
+                username '63c4477606cf4c2928d2cac1'
+                password 'ZhPGBcp7_InO'
+            }
+            url "https://packages.aliyun.com/maven/repository/2323209-release-43rnAu"
+        }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'}
     }
 }
